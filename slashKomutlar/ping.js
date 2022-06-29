@@ -17,7 +17,7 @@ module.exports = {
      .setDescription(`Gecikme değeri: ${client.ws.ping}ms!`)
 
      if(client.ws.ping < 60) embed.setColor("GREEN")
-     else if(client.ws.ping > 60 && client.ws.ping < 120) embed.setColor("YELLOW")
+     else if(client.ws.ping > 60 && client.ws.ping < 120) embed.setColor("BLACK")
      else if(client.ws.ping > 120) embed.setColor("RED")
 
 

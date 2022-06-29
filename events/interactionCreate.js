@@ -71,12 +71,12 @@ module.exports = async (client, interaction, button) => {
           Destek işlemlerini aşağıdaki butonlar ile yapabilirsin.`)
 
           const buton = new MessageActionRow().addComponents(
-            new MessageButton().setCustomId("close").setLabel("Kaydet ve Kapat").setStyle("PRIMARY").setEmoji("💾"),
+            new MessageButton().setCustomId("close").setLabel("Kaydet ve Kapat").setStyle("PRIMARY").setEmoji("🎫"),
             new MessageButton().setCustomId("lock").setLabel("Kilitle").setStyle("SECONDARY").setEmoji("🔒"),
             new MessageButton().setCustomId("unlock").setLabel("Aç").setStyle("SUCCESS").setEmoji("🔓"),
           )
 
-          channel.send({content:`${member} Destek talebi açıldı`})
+          channel.send({content:`${member} Destek talebini oluşturdum`})
           channel.send({embeds:[embed],components:[buton]})
           interaction.reply({content:`Talep açıldı! ${channel}`,ephemeral:true});
         })

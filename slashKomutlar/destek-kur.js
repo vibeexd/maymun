@@ -102,7 +102,7 @@ module.exports = {
                     .setCustomId("destek")
                     .setLabel(buton)
                     .setStyle("PRIMARY")
-                    .setEmoji("📩")
+                    .setEmoji("")
                 )
                 interaction.reply({content:"Gönderildi!",ephemeral:true});
                 guild.channels.cache.get(channel.id)
