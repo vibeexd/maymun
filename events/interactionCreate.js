@@ -67,8 +67,8 @@ module.exports = async (client, interaction, button) => {
           })
           const embed = new MessageEmbed()
           .setAuthor({name:`${guild.name} | Destek: ${id}`,iconURL:guild.iconURL({dynamic:true})})
-          .setDescription(`Destek ekibi birazdan burdan olur sakın endişelenme! sorununu hemen çözeceklerine inanıyorum :)
-          Destek işlemlerini aşağıdaki butonlar ile yapabilirsin.`)
+          .setDescription(`Destek Ekibi En Kısa Zamanda Burda Olucaklar Lütfen Sorununu Yaz Ve Bekle 📬
+          Destek Talebini Aşşağıdaki Butonlar Tarafından Yönetebilirsin :)`)
 
           const buton = new MessageActionRow().addComponents(
             new MessageButton().setCustomId("close").setLabel("Kaydet ve Kapat").setStyle("PRIMARY").setEmoji("🎫"),
