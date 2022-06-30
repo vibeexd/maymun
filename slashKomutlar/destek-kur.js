@@ -49,11 +49,7 @@ module.exports = {
         
         
     ],
-    /**
-     * 
-     * @param {Client} client 
-     * @param {CommandInteraction} interaction 
-     */
+
     run: async (client, interaction) => {
         if(!interaction.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) return interaction.reply({content:"Bu komutu kullanabilmek için `Yönetici` yetkisine sahip olmalısın!",ephemeral:true});
 
