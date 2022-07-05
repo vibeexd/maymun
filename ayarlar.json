@@ -1,4 +1,4 @@
 {
     "token":"",
-    "mongoDB":""
+    "mongoDB":"mongodb+srv://Nopel:3144emin@cluster0.5tb8y.mongodb.net/Emin?retryWrites=true&w=majority"
 }

@@ -3,9 +3,9 @@ const fs = require("fs");
 
 /**
  * 
- * @param {Client} client 
- * @param {CommandInteraction} interaction 
- * @param {ButtonInteraction} button
+ * @ {Client} client 
+ * @ {CommandInteraction} interaction 
+ * @ {ButtonInteraction} button
  */
 module.exports = async (client, interaction, button) => {
     if (interaction.isCommand()){
