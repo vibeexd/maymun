@@ -60,7 +60,7 @@ fs.readdir("./events/", (_err, files) => {
 
 client.on("ready", async () => {
 
-    const rest = new REST({ version: "9" }).setToken(token);
+    const rest = new REST({ version: "9" }).setToken(process.env.token);
   try {
     await rest.put(Routes.applicationCommands(client.user.id), {
       body: client.commands,
@@ -71,7 +71,7 @@ client.on("ready", async () => {
 });
 
 
-client.login(token);
+client.login(process.env.token);
 
 
 
