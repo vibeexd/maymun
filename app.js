@@ -58,6 +58,8 @@ fs.readdir("./events/", (_err, files) => {
     });
 });
 
+
+
 client.on("ready", async () => {
 
     const rest = new REST({ version: "9" }).setToken(process.env.token);
