@@ -58,7 +58,14 @@ fs.readdir("./events/", (_err, files) => {
     });
 });
 
-
+const { joinVoiceChannel } = require('@discordjs/voice');
+ client.on('ready', () => { 
+  joinVoiceChannel({
+channelId: "994240868422799451",
+guildId: "898674312410701824",       
+adapterCreator: client.guilds.cache.get("898674312410701824").voiceAdapterCreator
+    });
+});
 
 client.on("ready", async () => {
 
